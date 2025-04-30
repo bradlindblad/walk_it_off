@@ -3,7 +3,7 @@
     "path": "C:/repo/R/walk_it_off/exercise.qmd",
     "project_path": "exercise.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "1202759702",
     "contents": "",
     "dirty": false,
     "created": 1746042685272.0,
@@ -19,14 +19,14 @@
         "rmdVisualWrapConfigured": "true",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "422:272.7272644042969"
+        "rmdVisualModeLocation": "408:545.4545288085938"
     },
     "folds": "",
-    "lastKnownWriteTime": 1746043498,
+    "lastKnownWriteTime": 1746044008,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1746043498551,
+    "last_content_update": 1746044008164,
     "read_only": false,
     "read_only_alternatives": []
 }
