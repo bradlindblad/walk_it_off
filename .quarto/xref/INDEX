@@ -1,0 +1,41 @@
+{
+  "index.qmd": {
+    "index.html": "bda2abfc"
+  },
+  "intro.qmd": {
+    "intro.html": "6d164878"
+  },
+  "summary.qmd": {
+    "summary.html": "32fcae96"
+  },
+  "references.qmd": {
+    "references.html": "b2c0bf34"
+  },
+  "backstory.qmd": {
+    "backstory.html": "2417b723"
+  },
+  "routine.qmd": {
+    "routine.html": "45228ba4"
+  },
+  "exercise.qmd": {
+    "exercise.html": "edf083b4"
+  },
+  "breathing.qmd": {
+    "breathing.html": "8efe329c"
+  },
+  "prayer.qmd": {
+    "prayer.html": "a71c1604"
+  },
+  "diet.qmd": {
+    "diet.html": "edcd49a8"
+  },
+  "causenta_visits.qmd": {
+    "causenta_visits.html": "6711d9bb"
+  },
+  "causenta_march25.qmd": {
+    "causenta_march25.html": "ff25159a"
+  },
+  "faith.qmd": {
+    "faith.html": "9563b277"
+  }
+}
