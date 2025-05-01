@@ -21,26 +21,27 @@ workout_data <- tibble(
     "2. SPRINT CLUSTERS (Repeat 3-5 clusters)", 
     "2. SPRINT CLUSTERS (Repeat 3-5 clusters)", 
     "2. SPRINT CLUSTERS (Repeat 3-5 clusters)",
+    "2. SPRINT CLUSTERS (Repeat 3-5 clusters)",
     "3. STEADY STATE"
   ),
   Activity = c(
     "Without Oxygen", "With Oxygen",
-    "Sprint Interval", "Rest Interval", "Recovery Between Clusters",
+    "Sprint Interval", "Rest Interval", "Repeat", "Recovery Between Clusters",
     "Calorie Target"
   ),
   Instructions = c(
     "Moderate activity", "Moderate activity with oxygen",
-    "All-out maximum effort", "Complete rest",  "Moderate pace after completing each cluster",
+    "All-out maximum effort", "Complete rest", "Repeat sprint/rest intervals 3-5 times to complete one cluster", "Moderate pace after completing each cluster",
     "Continue at normal steady state"
   ),
   Duration = c(
     "2 minutes", "2 minutes",
-    "20 seconds", "10 seconds", "2 minutes",
+    "20 seconds", "10 seconds", "~2.5 minutes per complete cluster", "2 minutes",
     "Until reaching 500 calories"
   ),
   Intensity = c(
     "Low (40-50%)", "Low (40-50%)",
-    "Maximum (100%)", "None (0%)", "Moderate (40-60%)",
+    "Maximum (100%)", "None (0%)", "Alternating", "Moderate (40-60%)",
     "Moderate (60-70%)"
   )
 )
@@ -49,7 +50,7 @@ workout_data <- tibble(
 workout_table <- workout_data %>%
   gt(groupname_col = "Section") %>%
   tab_header(
-    title = "Tabata EWOT Workout A",
+    title = "HIIT Oxygen Workout A",
     subtitle = "High-Intensity Interval Training with Oxygen Protocol"
   ) %>%
   fmt_markdown(columns = c(Instructions)) %>%
@@ -67,11 +68,11 @@ workout_table <- workout_data %>%
   ) %>%
   tab_style(
     style = cell_fill(color = "#fff2cc"),
-    locations = cells_body(rows = 5)
+    locations = cells_body(rows = 5:6)
   ) %>%
   tab_style(
     style = cell_fill(color = "#e6ffec"),
-    locations = cells_body(rows = 6)
+    locations = cells_body(rows = 7)
   ) %>%
   tab_style(
     style = list(
