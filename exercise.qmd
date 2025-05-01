@@ -50,7 +50,7 @@ workout_data <- tibble(
 workout_table <- workout_data %>%
   gt(groupname_col = "Section") %>%
   tab_header(
-    title = "HIIT Oxygen Workout A",
+    title = "Tabata EWOT Workout A",
     subtitle = "High-Intensity Interval Training with Oxygen Protocol"
   ) %>%
   fmt_markdown(columns = c(Instructions)) %>%
@@ -71,7 +71,7 @@ workout_table <- workout_data %>%
     locations = cells_body(rows = 5:6)
   ) %>%
   tab_style(
-    style = cell_fill(color = "#e6ffec"),
+    style = cell_fill(color = "#e6f2ff"),
     locations = cells_body(rows = 7)
   ) %>%
   tab_style(
