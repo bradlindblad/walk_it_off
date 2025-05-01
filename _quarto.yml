@@ -31,4 +31,7 @@ format:
     documentclass: scrreprt
 
 editor: visual
+execute: 
+  echo: false
+  warning: false
 
