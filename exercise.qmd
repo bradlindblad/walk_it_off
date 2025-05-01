@@ -1,4 +1,4 @@
-# Exercise
+# 1 Exercise
 
 ## Current protocol
 
@@ -32,11 +32,7 @@ Perform 3-5 clusters of the following:
 
 #### Workout B:
 
--   Steady state cardio for 500 to 1000 calories
-
-```{r}
-
-```
+-   Steady state cardio for 500 to 1000 caloriess
 
 ### Strength
 

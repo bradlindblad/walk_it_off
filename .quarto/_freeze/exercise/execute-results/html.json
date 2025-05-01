@@ -1,9 +1,11 @@
 {
-  "hash": "3a9dd86e4e1f950383aa331f1d94547f",
+  "hash": "6b8e4dffa8627f4047735863b7725cc7",
   "result": {
     "engine": "knitr",
-    "markdown": "# Exercise\n\n## Current protocol\n\n### EWOT\n\nEWOT or Exercise With Oxygen Therapy is a powerful modality. Here is what I'm doing.\n\nThere are two separate workouts that are done on alternating days, seven days a week.\n\n#### Workout A:\n\n*Warmup*:\n\n-   2 minutes w/o oxygen\n\n-   2 minutes w/ oxygen\n\n*Sprints*\n\nPerform 3-5 clusters of the following:\n\n-   20 seconds all-out work, 10 seconds rest\n\n-   Do that 3-5 times\n\n-   Moderate pace for 2 mins\n\n*Steady state*\n\n-   Continue at a normal steady state until reaching 500 calories\n\n#### Workout B:\n\n-   Steady state cardio for 500 to 1000 calories\n\n\n\n\n\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\n### Strength\n\n### Mobility\n\n## Past protocols\n",
-    "supporting": [],
+    "markdown": "# 1 Exercise\n\n## Current protocol\n\n### EWOT\n\nEWOT or Exercise With Oxygen Therapy is a powerful modality. Here is what I'm doing.\n\nThere are two separate workouts that are done on alternating days, seven days a week.\n\n#### Workout A:\n\n*Warmup*:\n\n-   2 minutes w/o oxygen\n\n-   2 minutes w/ oxygen\n\n*Sprints*\n\nPerform 3-5 clusters of the following:\n\n-   20 seconds all-out work, 10 seconds rest\n\n-   Do that 3-5 times\n\n-   Moderate pace for 2 mins\n\n*Steady state*\n\n-   Continue at a normal steady state until reaching 500 calories\n\n#### Workout B:\n\n-   Steady state cardio for 500 to 1000 calories\n\n\n\n\n\n\n\n\n\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\n\n\n\n\n### Strength\n\n### Mobility\n\n## Past protocols\n",
+    "supporting": [
+      "exercise_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

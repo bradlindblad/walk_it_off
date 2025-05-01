@@ -3,7 +3,7 @@
     "path": "C:/repo/R/walk_it_off/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
-    "hash": "0",
+    "hash": "1222389582",
     "contents": "",
     "dirty": false,
     "created": 1746041837093.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "2,18",
+        "cursorPosition": "10,19",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1746043592,
+    "lastKnownWriteTime": 1746107744,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1746043592013,
+    "last_content_update": 1746107744164,
     "read_only": false,
     "read_only_alternatives": []
 }
