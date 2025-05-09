@@ -117,7 +117,8 @@ workout_table <- workout_data %>%
     row_group.font.weight = "bold",
     table.border.top.style = "none",
     table.border.bottom.style = "none"
-  )
+  ) |>
+     gtExtras::gt_theme_nytimes()
 
 # Display the table
 workout_table
@@ -127,7 +128,108 @@ This workout is tough. Use contrast as well (breath low-oxygen during sprints).
 
 #### Workout B:
 
--   Steady state cardio for 500 to 1000 caloriess
+```{r}
+
+
+# Create data frame for the workout with better structure
+workout_data <- tibble(
+  Section = c(
+    "1. WARMUP",
+    "2. STEADY STATE"
+  ),
+  Activity = c(
+    "With Oxygen", "With Oxygen"
+  ),
+  Instructions = c(
+    "Moderate activity with oxygen", "Moderate - Heavy activity with oxygen"
+  ),
+  Duration = c(
+    "2 minutes", "Until reaching 500 - 1,000 calories"
+  ),
+  Intensity = c(
+    "Low (40-50%)", "Moderate (40-60%)"
+  )
+)
+
+# Create the gt table with grouping
+workout_table_b <- workout_data %>%
+  gt(groupname_col = "Section") %>%
+  tab_header(
+    title = "Steady State EWOT Workout B",
+    subtitle = "Steady State Training with Oxygen Protocol"
+  ) %>%
+  fmt_markdown(columns = c(Instructions)) %>%
+  tab_style(
+    style = cell_fill(color = "#e6f2ff"),
+    locations = cells_body(rows = 1)
+  ) %>%
+  tab_style(
+    style = cell_fill(color = "#fff2cc"),
+    locations = cells_body(rows = 2)
+  ) %>%
+  # tab_style(
+  #   style = cell_fill(color = "#f0f0f0"),
+  #   locations = cells_body(rows = 4)
+  # ) %>%
+  # tab_style(
+  #   style = cell_fill(color = "#fff2cc"),
+  #   locations = cells_body(rows = 5:6)
+  # ) %>%
+  # tab_style(
+  #   style = cell_fill(color = "#e6f2ff"),
+  #   locations = cells_body(rows = 7)
+  # ) %>%
+  tab_style(
+    style = list(
+      cell_text(weight = "bold"),
+      cell_fill(color = "#d9d9d9")
+    ),
+    locations = cells_column_labels()
+  ) %>%
+  tab_style(
+    style = list(
+      cell_text(weight = "bold", size = px(14)),
+      cell_fill(color = "#b3b3b3")
+    ),
+    locations = cells_row_groups()
+  ) %>%
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_body(columns = Activity)
+  ) %>%
+  # tab_style(
+  #   style = cell_text(weight = "bold", color = "#cc0000"),
+  #   locations = cells_body(columns = Intensity, rows = 3)
+  # ) %>%
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = "all",
+        color = "gray",
+        weight = px(1)
+      )
+    ),
+    locations = cells_body()
+  ) %>%
+  tab_options(
+    table.width = pct(100),
+    heading.title.font.size = px(24),
+    heading.subtitle.font.size = px(16),
+    heading.title.font.weight = "bold",
+    heading.background.color = "#ddedff",
+    column_labels.font.weight = "bold",
+    row_group.background.color = "#b3b3b3",
+    row_group.font.weight = "bold",
+    table.border.top.style = "none",
+    table.border.bottom.style = "none"
+  ) |>
+     gtExtras::gt_theme_nytimes()
+
+# Display the table
+workout_table_b
+```
+
+Also use contrast here, alternating low oxygen with high.
 
 ### Strength
 
