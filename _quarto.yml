@@ -6,6 +6,8 @@ book:
   title: "Walk It Off"
   author: "Brad Lindblad"
   date: "4/30/2025"
+  cover-image: cover.png
+  favicon: cover.png
   chapters:
     - index.qmd
     - backstory.qmd
@@ -19,6 +21,11 @@ book:
       chapters:
         - causenta_march25.qmd
     - part: faith.qmd
+    - part: data.qmd
+      chapters:
+        - cardio.qmd
+        - strength.qmd
+        - recovery.qmd
 
 bibliography: references.bib
 

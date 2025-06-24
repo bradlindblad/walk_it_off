@@ -37,5 +37,17 @@
   },
   "faith.qmd": {
     "faith.html": "9563b277"
+  },
+  "cardio.qmd": {
+    "cardio.html": "13556232"
+  },
+  "strength.qmd": {
+    "strength.html": "80d8ed0d"
+  },
+  "data.qmd": {
+    "data.html": "fe173ed2"
+  },
+  "recovery.qmd": {
+    "recovery.html": "f3aa83e3"
   }
 }

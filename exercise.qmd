@@ -6,6 +6,182 @@
 
 EWOT or Exercise With Oxygen Therapy is a powerful modality. Here is what I'm doing.
 
+There are two separate workouts that are done on alternating days, six days a week.
+
+```{r}
+library(gt)
+library(dplyr)
+
+
+workout_data <- tibble(
+    Week = c(
+    1,2,3,4
+  ),
+  Warmup = "5min",
+  
+  'Low 02' = c(
+    "1min", "2min", "3min", "4min"
+  ),
+  'High O2' = c(
+    "4min", "3min", "2min", "1min"
+  )
+)
+
+# Create the gt table with grouping
+workout_table <- workout_data %>%
+  gt() %>%
+  tab_header(
+    title = "Contrast EWOT Workout",
+    subtitle = "Performed 4x/week"
+  ) %>%
+gt::tab_spanner(
+    label = "3 Sets*",
+    columns = c(`Low 02`, `High O2`)
+  ) |>
+    tab_source_note("* Perform the Low O2 then High O2 sections = 1 set. Do that 3x") |>
+
+  tab_options(
+       table.width = pct(100),
+    heading.title.font.size = px(24),
+    heading.subtitle.font.size = px(16),
+    heading.title.font.weight = "bold",
+    heading.background.color = "#ddedff",
+    column_labels.font.weight = "bold",
+      table.background.color = "#ddedff",
+    row_group.background.color = "#b3b3b3",
+    row_group.font.weight = "bold",
+    table.border.top.style = "none",
+    table.border.bottom.style = "none"
+  ) 
+
+
+# Display the table
+workout_table
+```
+
+```{r}
+workout_data <- tibble(
+  Section = c(
+    "1. WARMUP",
+    "2. SPRINT CLUSTERS (Repeat 3-5 clusters)", 
+    "2. SPRINT CLUSTERS (Repeat 3-5 clusters)", 
+    "2. SPRINT CLUSTERS (Repeat 3-5 clusters)"
+  ),
+  Activity = c(
+    "Easy warmup",
+    "Sprint Interval",
+    "Rest Interval",
+    "Repeat"
+  ),
+  Instructions = c(
+    "Moderate activity with oxygen",
+    "80-95% effort with oxygen",
+    "Light recovery effort with oxygen",
+    "Perform 4 sets"
+  ),
+  Duration = c(
+    "10 minutes",
+    "4 minutes",
+    "3 minutes",
+    "-"
+  ),
+  Intensity = c(
+    "Low (40-50%)",
+    "High (80-95% max)",
+    "Low (40-50%)",
+    "-"
+  )
+)
+
+# Create the gt table with grouping
+workout_table <- workout_data %>%
+  gt(groupname_col = "Section") %>%
+  tab_header(
+    title = "Norweigan 4x4",
+    subtitle = "Performed 2x/week"
+  ) %>%
+  fmt_markdown(columns = c(Instructions)) %>%
+  tab_style(
+    style = cell_fill(color = "#e6f2ff"),
+    locations = cells_body(rows = 1)
+  ) %>%
+  tab_style(
+    style = cell_fill(color = "#ffecec"),
+    locations = cells_body(rows = 2)
+  ) %>%
+  tab_style(
+    style = cell_fill(color = "#f0f0f0"),
+    locations = cells_body(rows = 4)
+  ) %>%
+  tab_style(
+    style = cell_fill(color = "#fff2cc"),
+    locations = cells_body(rows = 3)
+  ) %>%
+  # tab_style(
+  #   style = cell_fill(color = "#e6f2ff"),
+  #   locations = cells_body(rows = 7)
+  # ) %>%
+  tab_style(
+    style = list(
+      cell_text(weight = "bold"),
+      cell_fill(color = "#d9d9d9")
+    ),
+    locations = cells_column_labels()
+  ) %>%
+  tab_style(
+    style = list(
+      cell_text(weight = "bold", size = px(14)),
+      cell_fill(color = "#b3b3b3")
+    ),
+    locations = cells_row_groups()
+  ) %>%
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_body(columns = Activity)
+  ) %>%
+  tab_style(
+    style = cell_text(weight = "bold", color = "#cc0000"),
+    locations = cells_body(columns = Intensity, rows = 2)
+  ) %>%
+  # tab_style(
+  #   style = list(
+  #     cell_borders(
+  #       sides = "all",
+  #       color = "gray",
+  #       weight = px(1)
+  #     )
+  #   ),
+  #   locations = cells_body()
+  # ) %>%
+  tab_options(
+    table.width = pct(100),
+    heading.title.font.size = px(24),
+    heading.subtitle.font.size = px(16),
+    heading.title.font.weight = "bold",
+    heading.background.color = "#ddedff",
+    
+    column_labels.font.weight = "bold",
+    row_group.background.color = "#b3b3b3",
+    row_group.font.weight = "bold",
+    table.border.top.style = "none",
+    table.border.bottom.style = "none"
+  ) 
+     # gtExtras::gt_theme_nytimes()
+
+# Display the table
+workout_table
+```
+
+## Past protocols
+
+<details>
+
+<summary>March - May 2025</summary>
+
+### EWOT
+
+EWOT or Exercise With Oxygen Therapy is a powerful modality. Here is what I'm doing.
+
 There are two separate workouts that are done on alternating days, seven days a week.
 
 #### Workout A:
@@ -14,7 +190,7 @@ There are two separate workouts that are done on alternating days, seven days a 
 library(gt)
 library(dplyr)
 
-# Create data frame for the workout with better structure
+
 workout_data <- tibble(
   Section = c(
     "1. WARMUP", "1. WARMUP",
@@ -130,7 +306,6 @@ This workout is tough. Use contrast as well (breath low-oxygen during sprints).
 
 ```{r}
 
-
 # Create data frame for the workout with better structure
 workout_data <- tibble(
   Section = c(
@@ -231,8 +406,4 @@ workout_table_b
 
 Also use contrast here, alternating low oxygen with high.
 
-### Strength
-
-### Mobility
-
-## Past protocols
+</details>
