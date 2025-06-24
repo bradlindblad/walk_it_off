@@ -4,10 +4,11 @@ project:
 
 book:
   title: "Walk It Off"
+  subtitle: "Or, the Hezekiah Option"
   author: "Brad Lindblad"
-  date: "4/30/2025"
-  cover-image: cover.png
-  favicon: cover.png
+  date: today
+  cover-image: cover2.png
+  favicon: cover2.png
   chapters:
     - index.qmd
     - backstory.qmd
